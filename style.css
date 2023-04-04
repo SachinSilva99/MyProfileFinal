@@ -1,20 +1,74 @@
-body{
+*{
     padding: 0;
     margin: 0;
+}
+body {
+
     height: 100vh;
     width: 100%;
+    background-color: #0b0c10;
+
 }
-.navbar{
+
+.navbar-outer {
     height: 10vh;
     width: 100%;
-    background-color: red;
+    display: flex;
 }
-main{
+.portfolio-icon {
+    /* # border: 1px solid red; */
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding: 10px;
+}
+.icon-container {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+.icon-container > h3 {
+    color: #c5c6c7;
+    font: xx-large roboto;
+}
+
+
+.navbar{
+    width: 100%;
+    height: 100%;
+}
+
+.navbar > ul {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.navbar > ul > li {
+    padding-right: 10px;
+    padding-left: 20px;
+    transition: 0.2s ease-in-out;
+}
+.navbar > ul> li > span > a {
+    color: #c5c6c7;
+    text-decoration: none;
+    font-size: x-large;
+    font-family: "Roboto";
+}
+.navbar > ul  > li:hover > span > a {
+    color: #66fcf1;
+}
+
+main {
     height: 80vh;
     width: 100%;
     background-color: aqua;
 }
-footer{
+
+footer {
     height: 10vh;
     width: 100%;
     background-color: coral;
